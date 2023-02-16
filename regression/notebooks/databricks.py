@@ -1,9 +1,8 @@
 # Databricks notebook source
-
 # MAGIC %md
 # MAGIC # MLflow Regression Recipe Databricks Notebook
 # MAGIC This notebook runs the MLflow Regression Recipe on Databricks and inspects its results.
-# MAGIC
+# MAGIC 
 # MAGIC For more information about the MLflow Regression Recipe, including usage examples,
 # MAGIC see the [Regression Recipe overview documentation](https://mlflow.org/docs/latest/recipes.html#regression-recipe)
 # MAGIC and the [Regression Recipe API documentation](https://mlflow.org/docs/latest/python_api/mlflow.recipes.html#module-mlflow.recipes.regression.v1.recipe).
@@ -32,7 +31,7 @@ r.clean()
 
 # COMMAND ----------
 
-r.inspect()
+# r.inspect()
 
 # COMMAND ----------
 
@@ -91,3 +90,7 @@ training_data.describe()
 
 trained_model = r.get_artifact("model")
 print(trained_model)
+
+# COMMAND ----------
+
+
